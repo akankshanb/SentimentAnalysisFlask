@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Sentiment Analysis of Restaurant reviews
+		</div>
+		<h2></h2>
+		
+	</div>
+	</header>
+	<p style="color:blue;font-size:20;text-align: center;"><b>Results for Comment</b></p>
+	<div class="results">
+		
+	{% if prediction == 0%}
+	<h2 style="color:red;">Negative Review!</h2>
+	{% elif prediction== 1%}
+	<h2 style="color:blue;">Positive Review!</h2>
+	{% endif %}
+
+    </div>
+    
+</body>
+</html>

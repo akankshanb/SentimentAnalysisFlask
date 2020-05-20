@@ -1,0 +1,6 @@
+flask
+pandas
+numpy
+sklearn
+nltk (pip install --user -U nltk)
+nltk.download('stopwords')
